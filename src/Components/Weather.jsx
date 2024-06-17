@@ -99,7 +99,7 @@ const Weather = ({weatherKey, setloading ,setlatitude,latitude,longitude ,setlon
             </div>
             <div className="flex-1">
               <img
-                src={`/src/assets/V1_icons/color/${icon.replace(
+                src={`/assets/V1_icons/color/${icon.replace(
                   /-/g,
                   "_"
                 )}.svg`}
