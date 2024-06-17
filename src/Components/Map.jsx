@@ -51,7 +51,7 @@ const apiKey = import.meta.env.VITE_MAP_KEY;
      
       <div className="w-full grid place-items-center">
       <img
-        src="/assets/location.png"
+        src="./assets/location.png"
         alt="pin"
         className="w-10 absolute z-10"
       />
