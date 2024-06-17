@@ -70,7 +70,7 @@ const Weather = ({weatherKey, setloading ,setlatitude,latitude,longitude ,setlon
       icon: <FiSunset />,
     },
   ];
-  return (
+  return currentforecast && (
     <>
       <main className="w-full h-max overflow-hidden flex text-white gap-4 mobile:flex-col md:flex-col ">
         <section className=" flex flex-col gap-4 flex-[5]">
