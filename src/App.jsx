@@ -25,7 +25,7 @@ const App = () => {
         >
           <Loader />
         </div>
-        <div className="bg-backBlue w-full h-full p-4 flex flex-row gap-6 mobile:flex-col">
+        <div className="bg-backBlue w-full h-full p-4 flex flex-row gap-6 md:flex-col">
           <Sidebar setloading={setloading}/>
           <Routes>
             <Route path="/" element={<Weather weatherKey={weatherApi} setloading={setloading} setlatitude={setlatitude} setlongitude={setlongitude} latitude={latitude} longitude={longitude} currentLocation={currentLocation} setcurrentLocation={setcurrentLocation}/>} />

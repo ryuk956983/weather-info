@@ -72,7 +72,7 @@ const Weather = ({weatherKey, setloading ,setlatitude,latitude,longitude ,setlon
   ];
   return currentforecast && (
     <>
-      <main className="w-full h-max overflow-hidden flex text-white gap-4 mobile:flex-col md:flex-col ">
+      <main className="w-full h-max overflow-hidden flex text-white gap-4 md:flex-col md:flex-col ">
         <section className=" flex flex-col gap-4 flex-[5]">
           <Searchbar
             setlatitude={setlatitude}
@@ -80,9 +80,9 @@ const Weather = ({weatherKey, setloading ,setlatitude,latitude,longitude ,setlon
             setcurrentLocation={setcurrentLocation}
           />
 
-          <div className="flex justify-between  w-full overflow-hidden max-h-[200px] mobile:max-h-[220px]">
+          <div className="flex justify-between  w-full overflow-hidden max-h-[200px] md:max-h-[220px]">
             <div className="flex-1">
-              <h1 className="text-4xl font-bold truncate mobile:w-[50vw]">
+              <h1 className="text-4xl font-bold truncate md:w-[50vw]">
                 {currentLocation}
               </h1>
               <h3 className="text-textGrey mt-4">
@@ -116,8 +116,8 @@ const Weather = ({weatherKey, setloading ,setlatitude,latitude,longitude ,setlon
                 TODAY'S FORECAST
               </h1>
               <div
-                className={`flex justify-around h-[0px]  mobile:overflow-y-scroll gap-y-4 flex-wrap ${
-                  !btnShow && "h-[145px] mobile:h-[345px]"
+                className={`flex justify-around h-[0px]  md:overflow-y-scroll gap-y-4 flex-wrap ${
+                  !btnShow && "h-[145px] md:h-[345px]"
                 } overflow-hidden transition-all delay-100 ease-in-out `}
               >
                 {weatherData &&

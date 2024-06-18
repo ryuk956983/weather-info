@@ -9,7 +9,8 @@ export default {
 'barlow':"url(./src/Font/Barlow-Bold.ttf)"
     },
     screens:{
-      mobile: {'max': '640px'}
+      mobile: {'max': '640px'},
+      md:{"max":"657px"}
     }
     ,
     extend: {

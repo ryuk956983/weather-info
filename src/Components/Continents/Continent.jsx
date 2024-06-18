@@ -24,7 +24,7 @@ const Continent = ({ data, setlatitude, setlongitude, setcurrentLocation }) => {
           className="relative w-full bg-transparent border-b-2 py-2 outline-none"
           placeholder="Search"
         onClick={()=>{setshowlist(!showlist)}} onChange={(e)=>{setcountrySearch(e.target.value)}}/>
-     <ul className={`mt-4 text-xl flex z-10 p-4 rounded-xl rounded-t-none  flex-col gap-4 absolute bg-greyBlue w-full left-0 ${!showlist && "hidden"} h-[30vh] overflow-y-auto` }>
+     <ul className={`mt-4 text-xl flex z-10 p-4 rounded-xl rounded-t-none  flex-col gap-4 absolute bg-greyBlue w-full left-0 ${!showlist && "hidden"} max-h-[30vh] overflow-y-auto shadow-black shadow-md` }>
        {data.countries.filter( val => val.name.toLowerCase().includes(countrySearch)).map((el,ind)=>(
         
         <Link to="/" key={ind} ><li onClick={()=>{setcountry(el)}} >{el.name}</li></Link>

@@ -19,14 +19,14 @@ setshow(false);
 })
 
   return (
-    <div className="bg-greyBlue mobile:w-full w-20 rounded-xl flex flex-col items-center p-5 mobile:justify-between ">
+    <div className="bg-greyBlue md:w-full w-20 rounded-xl flex flex-col items-center p-5 md:justify-between ">
       <div className="flex justify-between w-full">
-        <FaUmbrella className="text-white text-2xl w-full mobile:w-auto"/>
-        <div className="text-white text-2xl hidden mobile:block" onClick={()=>{setshow(!show)}}>
+        <FaUmbrella className="text-white text-2xl w-full md:w-auto"/>
+        <div className="text-white text-2xl hidden md:block" onClick={()=>{setshow(!show)}}>
           <GiHamburgerMenu />
         </div>
       </div>
-      <ul className={`flex flex-col gap-10  text-textGrey ${show?"mobile:h-[330px]":"mobile:h-0"} overflow-hidden transition-all ease-in-out delay-250 `}>
+      <ul className={`flex flex-col gap-10  text-textGrey ${show?"md:h-[330px]":"md:h-0"} overflow-hidden transition-all ease-in-out delay-250 `}>
         <li className="cursor-pointer  mt-10">
           <Link to=""
             className="navfocus flex flex-col items-center justify-center hover:text-white focus:text-white "

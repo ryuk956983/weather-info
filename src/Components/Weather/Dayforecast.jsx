@@ -26,8 +26,8 @@ const Dayforecast = ({value,setcurrentforecast,setcurrentDay}) => {
             {date}
         </h2>
         <div className='flex gap-4 items-center font-bold tracking-wide'>
-            <img src={`./assets/V1_icons/color/${dayIcon.replace(/-/g,"_")}.svg`} alt="" className='w-12 mobile:w-16'/>
-            <h1 className='mobile:hidden'>{value.conditions}</h1>
+            <img src={`./assets/V1_icons/color/${dayIcon.replace(/-/g,"_")}.svg`} alt="" className='w-12 md:w-16'/>
+            <h1 className='md:hidden'>{value.conditions}</h1>
         </div>
 
         <h2 className='text-textGrey tracking-wide'><strong className='text-white'>{tempmax}</strong>/{tempmin}</h2>

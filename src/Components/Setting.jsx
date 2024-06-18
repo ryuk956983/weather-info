@@ -22,9 +22,9 @@ useEffect(() => {
 }, [])
 
   return continent && (
-    <div className='text-white  w-full overflow-hidden'>
+    <div className='text-white w-full overflow-hidden'>
 <h1 className='text-4xl tracking-wide mb-4'>World</h1>
-<div className='grid grid-cols-2 mobile:grid-cols-1 gap-4 mb-24'>
+<div className='grid grid-cols-2 md:grid-cols-1 gap-4 mb-24'>
 {
         continent.continents.map((val,index)=>(
 <Continent data={val} key={index} setcurrentLocation={setcurrentLocation} setlatitude={setlatitude} setlongitude={setlongitude}/>

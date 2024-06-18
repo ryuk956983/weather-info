@@ -245,12 +245,12 @@ setloading(false);
 
   return (
 
-    <div className="w-full h-max text-white flex mobile:flex-col md:flex-col gap-4 ">
+    <div className="w-full h-max text-white flex md:flex-col md:flex-col gap-4 ">
 
 
       <div className="flex flex-col gap-4 flex-[5] h-">
         <Searchbar />
-        <div className="statesMap grid grid-cols-2 mobile:grid-cols-1 gap-4 w-full h-[86.5vh] overflow-y-scroll pr-2">
+        <div className="statesMap grid grid-cols-2 md:grid-cols-1 gap-4 w-full h-[86.5vh] overflow-y-scroll pr-2">
           {
             stateArray.map((el,ind)=>(
               <Link to={"/"} onClick={()=>{handleWeather(el)}} key={ind}><Capital  data={el} /></Link>

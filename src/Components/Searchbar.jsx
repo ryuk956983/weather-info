@@ -275,7 +275,7 @@ const changecoordsSearch =(el)=>{
     <div className={`w-full bg-greyBlue rounded-xl h-fit flex p-2 gap-2 relative ${showList && "rounded-b-none"}`} >
      <div className='w-[82%] '>
      <input type="text" onChange={(e)=>{setsearchVal(e.target.value)}} onClick={()=>{setshowList(!showList)}} value={searchVal} className='inputSearch w-full p-2 bg-transparent text-white outline-none lowercase' placeholder='Search'  />
-     <div className={`absolute bg-greyBlue w-full z-10 mt-2 rounded-xl left-0 rounded-t-none ${!showList && "hidden" } h-[90vh] overflow-auto`}>
+     <div className={`absolute bg-greyBlue w-full z-10 mt-2 rounded-xl left-0 rounded-t-none ${!showList && "hidden" } max-h-[90vh] overflow-auto`}>
      
      <ul className='overflow-auto h-full'>
        {
@@ -286,7 +286,7 @@ const changecoordsSearch =(el)=>{
       </ul>
      </div>
      </div>
-     <div className={` bg-backBlue rounded-xl  mobile:px-4  px-2 cursor-pointer mobile:rounded-full`} onClick={getLocation}><Link to={"/"} className='flex gap-2 items-center h-full'><FaLocationDot /><span  className='mobile:hidden'>Current location</span></Link></div>
+     <div className={` bg-backBlue rounded-xl  md:px-4  px-2 cursor-pointer md:rounded-full`} onClick={getLocation}><Link to={"/"} className='flex gap-2 items-center h-full'><FaLocationDot /><span  className='md:hidden'>Current location</span></Link></div>
      
     </div>
   )
