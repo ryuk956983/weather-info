@@ -5,6 +5,7 @@ const Setting = ({setloading,setlatitude,setlongitude,setcurrentLocation}) => {
 
   const [continent,setcontinent] =  useState();
   
+  
   async function continentFetch(){
     const response = await fetch("./continents.json");
     const data = await response.json();
@@ -15,6 +16,7 @@ const Setting = ({setloading,setlatitude,setlongitude,setcurrentLocation}) => {
   } 
   
 useEffect(() => {
+  setloading(false);
  continentFetch();
  
 }, [])
