@@ -267,16 +267,17 @@ const changecoordsSearch =(el)=>{
   setlongitude(el.latitude);
   setcurrentLocation(el.capital);
   setsearchVal("");
+  setshowList(false);
 }
 
 
   return (
     <div className={`w-full bg-greyBlue rounded-xl h-fit flex p-2 gap-2 relative ${showList && "rounded-b-none"}`} >
      <div className='w-[82%] '>
-     <input type="text" onChange={(e)=>{setsearchVal(e.target.value)}} onClick={()=>{setshowList(!showList)}} value={searchVal} className='inputSearch p-2 bg-transparent text-white outline-none lowercase' placeholder='Search'  />
-     <div className={`absolute bg-greyBlue w-full z-10 mt-2 rounded-xl left-0 rounded-t-none ${!showList && "hidden" }`}>
+     <input type="text" onChange={(e)=>{setsearchVal(e.target.value)}} onClick={()=>{setshowList(!showList)}} value={searchVal} className='inputSearch w-full p-2 bg-transparent text-white outline-none lowercase' placeholder='Search'  />
+     <div className={`absolute bg-greyBlue w-full z-10 mt-2 rounded-xl left-0 rounded-t-none ${!showList && "hidden" } h-[90vh] overflow-auto`}>
      
-     <ul>
+     <ul className='overflow-auto h-full'>
        {
         combinedArray.filter( val =>  ((val.name.toLowerCase().includes(searchVal)) || (val.capital.toLowerCase().includes(searchVal)))).map((el,ind)=>(
          <Link to="/" onClick={()=>{changecoordsSearch(el)}} key={ind}><li className='text-xl p-3' key={ind}>{el.capital}<span className='text-textGrey'> / {el.name}</span></li> </Link>
