@@ -264,7 +264,7 @@ const combinedArray =[...stateArray,...stateArray2]
 
 const changecoordsSearch =(el)=>{
   setlatitude(el.latitude);
-  setlongitude(el.latitude);
+  setlongitude(el.longitude);
   setcurrentLocation(el.capital);
   setsearchVal("");
   setshowList(false);
